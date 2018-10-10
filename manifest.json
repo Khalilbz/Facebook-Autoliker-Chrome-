@@ -1,0 +1,18 @@
+{
+  "name": "Facebook Posts Autoliker",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Facebook Posts Autoliker",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js.js"]
+    }
+  ]
+}
